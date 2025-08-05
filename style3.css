@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    background-color: black;
+    grid-template-rows: 3.5rem 1fr 3.5rem;  /* Topbar, main content, player bar */
+    grid-template-columns: 300px 1fr;
+    grid-gap: 10px;
+    overflow: hidden;
+
+}
+
+.navbar{
+    grid-column: 1/3;
+    background-color: black;
+    
+}
+
+.searchbar{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.searchbar i{
+    font-size: 1.2rem;
+    color: white;
+   
+}
+
+.searchbar input::placeholder{
+    color: white;
+}
+
+.explore{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+   
+}
+
+.explore i , button{
+    margin-right: 1.5rem;
+}
+
+.explore i{
+    opacity: 0.5;
+    color: white;
+}
+
+.explore i:hover{
+    opacity: 1;
+}
+
+.sidebar{
+    background-color: black;
+}
+
+
+.sidebar{
+    border-radius: 1rem;
+    background-color: #121212;
+
+}
+
+.sidebar .header{
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+   
+} 
+
+.cards{
+    height: 30%;
+    width: 90%;
+    background-color: #232323;
+    margin: 1rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    color: white;
+}
+
+
+.main-content{
+    background-color: #121212;
+    border-radius: 1rem;
+    overflow: auto;
+}
+
+.main-nav{
+    display: flex;
+    width: 100%;
+    height: 3.4rem;
+    align-items: center;
+    padding: 0.5rem;
+    position: sticky;
+    top: 0;
+    background-color: black;
+    z-index: 10;
+ 
+}
+
+.cards-container{
+  display: flex; 
+  flex-wrap: wrap ;
+}
+
+h3{
+    color: white;
+    padding: 1rem ;
+}
+.card{
+    background-color: #232323;
+     width: 180px;
+     border-radius: 0.5rem;
+     padding: 1rem;
+     margin-left: 1.5rem;
+     margin-top: 1rem;
+}
+
+.card-img{
+     width: 100%;
+     border-radius: 0.5rem;
+}
+
+.card-title{
+     font-weight: 600;
+     color: white;
+}
+
+.card-info{
+     font-size: 0.85rem;
+     opacity: 0.5;
+     color: white;
+}
+
+
+
+
+.player{
+    grid-column: 1/3;
+    width: 100%;
+    height: 3.5rem;
+    display: flex;
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+}
+
+.left{
+    width: 25%;
+    height: 100%;
+    background-color: black;
+}
+
+.middle{
+    width: 50%;
+    height: 100%;
+    background-color: black;
+   
+}
+
+
+
+.controls{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    width: 100%;
+}
+
+.controls img{
+    height: 1rem;
+    margin-left: 1.2rem;
+    opacity: 0.5;
+}
+
+.playbar{
+    display: flex;
+     height: 50%;
+     width: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.progress-bar{
+    width: 70%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+ .progress-bar::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.2rem;
+} 
+.progress-bar::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+   
+    
+}
+
+.right{
+    width: 25%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+
+.right img{
+    height: 1.5rem;
+    margin-left: 1rem;
+}
+
+.volume{
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+}
+
